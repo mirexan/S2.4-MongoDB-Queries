@@ -1,8 +1,8 @@
-# S2.4-MongoDB-Queries
-Task 4 from Sprint 2 of Itacademy's Java &amp; Spring Framework
-
-1.  Write a query to display all the documents in the Restaurants collection.
+use restaurant
+//1.  Write a query to display all the documents in the Restaurants collection.
+db.restaurant.find({})
 2.  Write a query to display the restaurant\_id, name, borough, and cuisine for all documents in the Restaurants collection.
+db.restaurant.find({}, {_id: 1, name: 1, borough: 1, cuisine: 1})
 3.  Write a query to display the restaurant\_id, name, borough, and cuisine, but exclude the \_id field for all documents in the Restaurants collection.
 4.  Write a query to display restaurant\_id, name, borough, and zip code, but exclude the \_id field for all documents in the Restaurants collection.
 5.  Write a query to display all the restaurants that are in the Bronx.
